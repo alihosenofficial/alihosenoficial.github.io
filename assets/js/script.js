@@ -157,3 +157,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+const messageIcon = document.getElementById('messageIcon');
+  const messageBox = document.getElementById('messageBox');
+  const closeBtn = document.getElementById('closeBtn');
+
+  messageIcon.addEventListener('click', () => {
+    messageBox.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    messageBox.style.display = 'none';
+  });
